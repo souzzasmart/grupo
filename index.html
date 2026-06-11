@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souzza Smart — Fature até R$30.000/mês Revendendo Smartphones</title>
+    <meta name="description" content="Compre iPhones, Android, acessórios e eletrônicos com preço de atacado. Acesse fornecedores exclusivos e revenda com alta margem de lucro. Grupo Souzza Smart.">
+    <meta name="keywords" content="revender smartphones, iPhones atacado, Android atacado, revenda celulares, renda extra, Souzza Smart, fornecedores smartphones">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Souzza Smart">
+    <link rel="canonical" href="https://souzzasmart.com.br/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Souzza Smart — Fature até R$30.000/mês Revendendo Smartphones">
+    <meta property="og:description" content="Compre iPhones, Android e acessórios com preço de atacado e revenda com alta margem. Grupo gratuito.">
+    <meta property="og:image" content="http://static.photos/technology/1200x630/77">
+    <meta property="og:url" content="https://souzzasmart.com.br/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Souzza Smart">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Souzza Smart — Fature até R$30.000/mês Revendendo Smartphones">
+    <meta name="twitter:description" content="Compre iPhones, Android e acessórios com preço de atacado e revenda com alta margem.">
+    <meta name="twitter:image" content="http://static.photos/technology/1200x630/77">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0a0e1a',
+                        'brand-navy': '#0d1b2a',
+                        'brand-blue': '#1b2838',
+                        'brand-gold': '#c9a84c',
+                        'brand-gold-light': '#e2c97e',
+                        'brand-gold-dark': '#a8872e',
+                    },
+                    fontFamily: {
+                        'heading': ['Inter', 'system-ui', 'sans-serif'],
+                        'body': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', system-ui, sans-serif; background: #0a0e1a; color: #fff; overflow-x: hidden; }
+
+        /* Gold gradient text */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #e2c97e 0%, #c9a84c 30%, #a8872e 60%, #c9a84c 80%, #e2c97e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Shimmer effect for gold text */
+        .text-gold-shimmer {
+            background: linear-gradient(90deg, #c9a84c, #e2c97e, #c9a84c, #e2c97e, #c9a84c);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 4s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        /* CTA Button glow */
+        .btn-glow {
+            background: linear-gradient(135deg, #c9a84c 0%, #e2c97e 50%, #c9a84c 100%);
+            color: #0a0e1a;
+            font-weight: 800;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 30px rgba(201, 168, 76, 0.3), 0 0 60px rgba(201, 168, 76, 0.1);
+        }
+        .btn-glow:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 0 40px rgba(201, 168, 76, 0.5), 0 0 80px rgba(201, 168, 76, 0.2);
+        }
+        .btn-glow::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.15), transparent);
+            transform: rotate(45deg);
+            animation: btnSheen 3s ease-in-out infinite;
+        }
+        @keyframes btnSheen {
+            0%, 100% { transform: translateX(-100%) rotate(45deg); }
+            50% { transform: translateX(100%) rotate(45deg); }
+        }
+
+        /* WhatsApp button */
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+        }
+        .btn-whatsapp:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+        }
+
+        /* Scroll animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.85);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal-scale.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Card hover */
+        .card-hover {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(201, 168, 76, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            border-color: rgba(201, 168, 76, 0.4);
+            box-shadow: 0 10px 40px rgba(201, 168, 76, 0.1);
+        }
+
+        /* Pulse animation for floating button */
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+        .pulse-ring::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 2px solid #25D366;
+            animation: pulse-ring 2s ease-out infinite;
+        }
+
+        /* Counter animation */
+        .counter-box {
+            background: linear-gradient(135deg, rgba(201,168,76,0.1) 0%, rgba(13,27,42,0.8) 100%);
+            border: 1px solid rgba(201, 168, 76, 0.3);
+        }
+
+        /* Comparison section */
+        .comparison-bad {
+            background: linear-gradient(135deg, rgba(220,38,38,0.1), rgba(13,27,42,0.9));
+            border: 1px solid rgba(220,38,38,0.2);
+        }
+        .comparison-good {
+            background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(13,27,42,0.9));
+            border: 1px solid rgba(201,168,76,0.3);
+        }
+
+        /* Urgency bar */
+        .urgency-bar {
+            background: linear-gradient(90deg, #c9a84c, #e2c97e, #c9a84c);
+            animation: urgencyPulse 2s ease-in-out infinite;
+        }
+        @keyframes urgencyPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.85; }
+        }
+
+        /* FAQ accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        .faq-answer.open {
+            max-height: 300px;
+        }
+
+        /* Testimonial card */
+        .testimonial-card {
+            background: linear-gradient(145deg, rgba(27,40,56,0.8), rgba(10,14,26,0.9));
+            border: 1px solid rgba(201,168,76,0.15);
+        }
+
+        /* Hero background effects */
+        .hero-bg {
+            background: 
+                radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(27,40,56,0.5) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(201,168,76,0.05) 0%, transparent 50%),
+                linear-gradient(180deg, #0a0e1a 0%, #0d1b2a 100%);
+        }
+
+        /* Grid pattern overlay */
+        .grid-pattern {
+            background-image: 
+                linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0e1a; }
+        ::-webkit-scrollbar-thumb { background: #c9a84c; border-radius: 4px; }
+
+        /* Disclaimer text */
+        .disclaimer {
+            color: rgba(255,255,255,0.35);
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Urgency Top Bar -->
+    <div class="urgency-bar text-center py-2 px-4 fixed top-0 left-0 right-0 z-50">
+        <p class="text-brand-dark text-xs sm:text-sm font-bold tracking-wide">
+            🔥 VAGAS LIMITADAS — Grupo com oportunidades atualizadas em tempo real. <span class="underline">Entre agora antes que lotem.</span>
+        </p>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="hero-bg grid-pattern relative min-h-screen flex items-center pt-14 pb-16" id="hero">
+        <!-- Decorative elements -->
+        <div class="absolute top-20 left-10 w-64 h-64 bg-brand-gold/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-80 h-80 bg-brand-gold/5 rounded-full blur-3xl"></div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+            <div class="text-center">
+                <!-- Badge -->
+                <div class="reveal inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-5 py-2 mb-8">
+                    <span class="w-2 h-2 bg-brand-gold rounded-full animate-pulse"></span>
+                    <span class="text-brand-gold text-xs sm:text-sm font-semibold tracking-wider uppercase">Grupo Gratuito — Vagas Abertas</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="reveal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight mb-6">
+                    FATURE ATÉ<br>
+                    <span class="text-gold-shimmer">R$30.000 POR MÊS</span><br>
+                    <span class="text-white/90">REVENDENDO SMARTPHONES</span>
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="reveal text-lg sm:text-xl md:text-2xl text-white/80 font-medium mb-6 max-w-3xl mx-auto">
+                    Compre iPhones, Android, acessórios e eletrônicos com <span class="text-brand-gold font-bold">preço de atacado</span> — mesmo comprando no varejo.
+                </p>
+
+                <!-- Complementary text -->
+                <div class="reveal max-w-2xl mx-auto mb-10">
+                    <p class="text-sm sm:text-base text-white/60 leading-relaxed">
+                        Imagine conseguir acesso aos mesmos fornecedores utilizados por lojistas e revendedores. 
+                        Agora imagine comprar smartphones e acessórios com preços <span class="text-brand-gold-light font-semibold">muito abaixo do mercado</span> e revendê-los com margens que podem transformar uma renda extra em um negócio lucrativo.
+                    </p>
+                    <p class="text-sm sm:text-base text-white/60 leading-relaxed mt-3">
+                        Foi exatamente isso que centenas de pessoas descobriram através da comunidade <span class="text-brand-gold font-bold">Souzza Smart</span>. 
+                        E talvez você seja o próximo.
+                    </p>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="reveal mb-8">
+                    <a href="https://chat.whatsapp.com/DuVemvg6TKwDQy9CzLVevZ?s=cl&p=i&ilr=2" target="_blank" rel="noopener noreferrer" 
+                       class="btn-glow inline-flex items-center gap-3 text-base sm:text-lg md:text-xl px-8 sm:px-10 md:px-14 py-4 sm:py-5 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 sm:w-7 sm:h-7"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        ENTRAR NO GRUPO AGORA
+                    </a>
+                </div>
+
+                <!-- Member Counter -->
+                <div class="reveal mb-8">
+                    <div class="counter-box inline-flex items-center gap-3 rounded-xl px-6 py-3">
+                        <span class="flex -space-x-2">
+                            <span class="w-8 h-8 rounded-full bg-brand-blue border-2 border-brand-dark flex items-center justify-center text-xs">👤</span>
+                            <span class="w-8 h-8 rounded-full bg-brand-navy border-2 border-brand-dark flex items-center justify-center text-xs">👤</span>
+                            <span class="w-8 h-8 rounded-full bg-brand-blue border-2 border-brand-dark flex items-center justify-center text-xs">👤</span>
+                        </span>
+                        <div class="text-left">
+                            <p class="text-brand-gold font-bold text-lg" id="memberCount">10.000+</p>
+                            <p class="text-white/50 text-xs">lojistas e revendedores</p>
+                        </div>
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse ml-2"></span>
+                    </div>
+                </div>
+
+                <!-- Trust Seals -->
+                <div class="reveal flex flex-wrap justify-center gap-4 sm:gap-6">
+                    <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-brand-gold"></i>
+                        <span>Produtos Originais</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm">
+                        <i data-lucide="file-text" class="w-4 h-4 text-brand-gold"></i>
+                        <span>Nota Fiscal</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm">
+                        <i data-lucide="badge-check" class="w-4 h-4 text-brand-gold"></i>
+                        <span>Garantia</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm">
+                        <i data-lucide="truck" class="w-4 h-4 text-brand-gold"></i>
+                        <span>Entrega para Todo Brasil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce">
+            <i data-lucide="chevrons-down" class="w-6 h-6 text-brand-gold/50"></i>
+        </div>
+    </header>
+
+    <!-- MARKET OPPORTUNITY SECTION -->
+    <section class="py-16 sm:py-20 md:py-28 bg-brand-navy relative overflow-hidden" id="mercado">
+        <div class="absolute inset-0 grid-pattern opacity-50"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12 sm:mb-16">
+                <p class="reveal text-brand-gold text-sm font-semibold tracking-widest uppercase mb-4">Oportunidade</p>
+                <h2 class="reveal text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    O mercado que movimenta <span class="text-gold-gradient">bilhões</span><br>está na palma da sua mão
+                </h2>
+            </div>
+
+            <!-- Product Cards Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
+                <!-- iPhone -->
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/50 p-5 sm:p-6 text-center group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 rounded-2xl bg-brand-gold/10 flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors">
+                        <i data-lucide="smartphone" class="w-7 h-7 sm:w-8 sm:h-8 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-1">iPhones</h3>
+                    <p class="text-white/40 text-xs">Alta demanda</p>
+                </div>
+                <!-- Samsung -->
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/50 p-5 sm:p-6 text-center group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 rounded-2xl bg-brand-gold/10 flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors">
+                        <i data-lucide="mobile" class="w-7 h-7 sm:w-8 sm:h-8 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-1">Android</h3>
+                    <p class="text-white/40 text-xs">Top de vendas</p>
+                </div>
+                <!-- Smartwatches -->
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/50 p-5 sm:p-6 text-center group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 rounded-2xl bg-brand-gold/10 flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors">
+                        <i data-lucide="watch" class="w-7 h-7 sm:w-8 sm:h-8 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-1">Smartwatches</h3>
+                    <p class="text-white/40 text-xs">Tendência</p>
+                </div>
+                <!-- Fones Bluetooth -->
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/50 p-5 sm:p-6 text-center group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 rounded-2xl bg-brand-gold/10 flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors">
+                        <i data-lucide="headphones" class="w-7 h-7 sm:w-8 sm:h-8 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-1">Fones BT</h3>
+                    <p class="text-white/40 text-xs">Alta margem</p>
+                </div>
+                <!-- Capinhas -->
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/50 p-5 sm:p-6 text-center group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 rounded-2xl bg-brand-gold/10 flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors">
+                        <i data-lucide="shield" class="w-7 h-7 sm:w-8 sm:h-8 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-1">Capinhas</h3>
+                    <p class="text-white/40 text-xs">Saida rápida</p>
+                </div>
+                <!-- Películas -->
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/50 p-5 sm:p-6 text-center group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 rounded-2xl bg-brand-gold/10 flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors">
+                        <i data-lucide="layers" class="w-7 h-7 sm:w-8 sm:h-8 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-1">Películas</h3>
+                    <p class="text-white/40 text-xs">Volume & lucro</p>
+                </div>
+                <!-- Eletrônicos -->
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/50 p-5 sm:p-6 text-center group sm:col-span-1 col-span-2 lg:col-span-2">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 rounded-2xl bg-brand-gold/10 flex items-center justify-center group-hover:bg-brand-gold/20 transition-colors">
+                        <i data-lucide="cpu" class="w-7 h-7 sm:w-8 sm:h-8 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-1">Eletrônicos</h3>
+                    <p class="text-white/40 text-xs">Variedade & oportunidades</p>
+                </div>
+            </div>
+
+            <!-- Closing text -->
+            <div class="reveal text-center">
+                <p class="text-lg sm:text-xl md:text-2xl font-semibold text-white/80">
+                    Você quer continuar comprando pelo <span class="text-red-400">preço normal</span> ou quer aprender onde os <span class="text-brand-gold">revendedores compram</span>?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFFERENTIAL SECTION -->
+    <section class="py-16 sm:py-20 md:py-28 bg-brand-dark relative overflow-hidden" id="diferencial">
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12 sm:mb-16">
+                <p class="reveal text-brand-gold text-sm font-semibold tracking-widest uppercase mb-4">Diferencial</p>
+                <h2 class="reveal text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    A diferença entre quem <span class="text-red-400">compra</span> e quem <span class="text-gold-gradient">lucra</span>
+                </h2>
+            </div>
+
+            <!-- Comparison Grid -->
+            <div class="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
+                <!-- Comprador Comum -->
+                <div class="reveal-left comparison-bad rounded-2xl p-6 sm:p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center">
+                            <i data-lucide="x-circle" class="w-6 h-6 text-red-400"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-red-400">Comprador Comum</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="trending-down" class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-white/70">Compra caro</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="eye-off" class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-white/70">Não conhece fornecedores</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="ban" class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-white/70">Lucro zero</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="receipt" class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-white/70">Paga preço cheio</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Revendedor Inteligente -->
+                <div class="reveal-right comparison-good rounded-2xl p-6 sm:p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-gold"></i>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-brand-gold">Revendedor Inteligente</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="trending-up" class="w-5 h-5 text-brand-gold mt-0.5 flex-shrink-0"></i>
+                            <span class="text-white/90 font-medium">Compra melhor</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="eye" class="w-5 h-5 text-brand-gold mt-0.5 flex-shrink-0"></i>
+                            <span class="text-white/90 font-medium">Conhece oportunidades</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="circle-dollar-sign" class="w-5 h-5 text-brand-gold mt-0.5 flex-shrink-0"></i>
+                            <span class="text-white/90 font-medium">Revende com margem</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="wallet" class="w-5 h-5 text-brand-gold mt-0.5 flex-shrink-0"></i>
+                            <span class="text-white/90 font-medium">Aumenta a renda</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="py-16 sm:py-20 md:py-28 bg-brand-navy relative overflow-hidden" id="beneficios">
+        <div class="absolute inset-0 grid-pattern opacity-30"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12 sm:mb-16">
+                <p class="reveal text-brand-gold text-sm font-semibold tracking-widest uppercase mb-4">Benefícios</p>
+                <h2 class="reveal text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    O que você encontra <span class="text-gold-gradient">dentro do grupo</span>
+                </h2>
+            </div>
+
+            <!-- Benefits Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/40 p-5 sm:p-6">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center mb-4">
+                        <i data-lucide="refresh-cw" class="w-5 h-5 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-2">Ofertas atualizadas diariamente</h3>
+                    <p class="text-white/40 text-xs sm:text-sm">Novas oportunidades todos os dias para você não perder nenhuma chance.</p>
+                </div>
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/40 p-5 sm:p-6">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center mb-4">
+                        <i data-lucide="tag" class="w-5 h-5 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-2">Promoções reais de smartphones</h3>
+                    <p class="text-white/40 text-xs sm:text-sm">Preços que você não encontra em lugar nenhum.</p>
+                </div>
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/40 p-5 sm:p-6">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center mb-4">
+                        <i data-lucide="arrow-down-circle" class="w-5 h-5 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-2">Oportunidades abaixo do mercado</h3>
+                    <p class="text-white/40 text-xs sm:text-sm">Preços de atacado acessíveis para qualquer revendedor.</p>
+                </div>
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/40 p-5 sm:p-6">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center mb-4">
+                        <i data-lucide="percent" class="w-5 h-5 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-2">Acessórios com alta margem</h3>
+                    <p class="text-white/40 text-xs sm:text-sm">Produtos com margens que fazem a diferença no seu bolso.</p>
+                </div>
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/40 p-5 sm:p-6">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center mb-4">
+                        <i data-lucide="alarm-clock" class="w-5 h-5 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-2">Alertas de estoque limitado</h3>
+                    <p class="text-white/40 text-xs sm:text-sm">Notificações para você não perder oportunidades relâmpago.</p>
+                </div>
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/40 p-5 sm:p-6">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center mb-4">
+                        <i data-lucide="handshake" class="w-5 h-5 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-2">Fornecedores confiáveis</h3>
+                    <p class="text-white/40 text-xs sm:text-sm">Fornecedores testados e aprovados pela comunidade.</p>
+                </div>
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/40 p-5 sm:p-6">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center mb-4">
+                        <i data-lucide="lightbulb" class="w-5 h-5 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-2">Dicas de revenda</h3>
+                    <p class="text-white/40 text-xs sm:text-sm">Estratégias práticas para vender mais e melhor.</p>
+                </div>
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/40 p-5 sm:p-6">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center mb-4">
+                        <i data-lucide="users" class="w-5 h-5 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base mb-2">Comunidade ativa</h3>
+                    <p class="text-white/40 text-xs sm:text-sm">Troca de experiências com milhares de revendedores.</p>
+                </div>
+            </div>
+
+            <!-- CTA inside benefits -->
+            <div class="reveal text-center mt-12">
+                <a href="https://chat.whatsapp.com/DuVemvg6TKwDQy9CzLVevZ?s=cl&p=i&ilr=2" target="_blank" rel="noopener noreferrer" 
+                   class="btn-whatsapp inline-flex items-center gap-3 text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    ENTRAR NO GRUPO GRATUITO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARGET AUDIENCE SECTION -->
+    <section class="py-16 sm:py-20 md:py-28 bg-brand-dark relative overflow-hidden" id="publico">
+        <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12 sm:mb-16">
+                <p class="reveal text-brand-gold text-sm font-semibold tracking-widest uppercase mb-4">Para Quem é</p>
+                <h2 class="reveal text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    Para quem é <span class="text-gold-gradient">este grupo?</span>
+                </h2>
+            </div>
+
+            <!-- Audience Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/30 p-5 sm:p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                        <i data-lucide="wrench" class="w-6 h-6 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base">Assistências Técnicas</h3>
+                </div>
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/30 p-5 sm:p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                        <i data-lucide="store" class="w-6 h-6 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base">Lojistas</h3>
+                </div>
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/30 p-5 sm:p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                        <i data-lucide="package" class="w-6 h-6 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base">Revendedores</h3>
+                </div>
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/30 p-5 sm:p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                        <i data-lucide="rocket" class="w-6 h-6 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base">Empreendedores</h3>
+                </div>
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/30 p-5 sm:p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                        <i data-lucide="coins" class="w-6 h-6 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base">Renda Extra</h3>
+                </div>
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/30 p-5 sm:p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                        <i data-lucide="shopping-bag" class="w-6 h-6 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base">Marketplace</h3>
+                </div>
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/30 p-5 sm:p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                        <i data-lucide="instagram" class="w-6 h-6 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base">Instagram</h3>
+                </div>
+                <div class="reveal-scale card-hover rounded-2xl bg-brand-blue/30 p-5 sm:p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                        <i data-lucide="message-circle" class="w-6 h-6 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm sm:text-base">WhatsApp</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF SECTION -->
+    <section class="py-16 sm:py-20 md:py-28 bg-brand-navy relative overflow-hidden" id="depoimentos">
+        <div class="absolute inset-0 grid-pattern opacity-30"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12 sm:mb-16">
+                <p class="reveal text-brand-gold text-sm font-semibold tracking-widest uppercase mb-4">Prova Social</p>
+                <h2 class="reveal text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    O que dizem os <span class="text-gold-gradient">membros</span>
+                </h2>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8 mb-8">
+                <!-- Testimonial 1 -->
+                <div class="reveal testimonial-card rounded-2xl p-6 sm:p-8">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                    </div>
+                    <p class="text-white/80 text-sm sm:text-base leading-relaxed mb-6 italic">
+                        "Lugar onde encontro as melhores oportunidades. Antes eu não sabia onde comprar, agora tenho acesso a preços que realmente fazem diferença."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center">
+                            <span class="text-brand-gold font-bold text-sm">C</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm">Carlos</p>
+                            <p class="text-white/40 text-xs">Lojista</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="reveal testimonial-card rounded-2xl p-6 sm:p-8">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                    </div>
+                    <p class="text-white/80 text-sm sm:text-base leading-relaxed mb-6 italic">
+                        "Consegui aumentar minha margem comprando melhor. As ofertas do grupo são reais e os fornecedores são confiáveis. Recomendo demais."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center">
+                            <span class="text-brand-gold font-bold text-sm">M</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm">Marcos</p>
+                            <p class="text-white/40 text-xs">Revendedor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="reveal testimonial-card rounded-2xl p-6 sm:p-8">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-brand-gold fill-brand-gold"></i>
+                    </div>
+                    <p class="text-white/80 text-sm sm:text-base leading-relaxed mb-6 italic">
+                        "Grupo indispensável para quem trabalha com celulares. Consigo comprar peças e aparelhos com preços muito melhores do que encontrava antes."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center">
+                            <span class="text-brand-gold font-bold text-sm">F</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm">Felipe</p>
+                            <p class="text-white/40 text-xs">Assistência Técnica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <p class="reveal text-center text-white/25 text-xs italic">
+                Depoimentos meramente ilustrativos. Resultados podem variar conforme esforço, experiência e condições de mercado.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-16 sm:py-20 md:py-28 bg-brand-dark relative overflow-hidden" id="faq">
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12 sm:mb-16">
+                <p class="reveal text-brand-gold text-sm font-semibold tracking-widest uppercase mb-4">Dúvidas</p>
+                <h2 class="reveal text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    Perguntas <span class="text-gold-gradient">Frequentes</span>
+                </h2>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/30 overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-sm sm:text-base">Mas é seguro?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-brand-gold flex-shrink-0 faq-icon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-0">
+                        <p class="text-white/60 text-sm sm:text-base leading-relaxed pb-5">
+                            Trabalhamos compartilhando oportunidades reais de compra e revenda, fornecedores e promoções. Sem promessas milagrosas. Nosso foco é conectar você a oportunidades concretas do mercado.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/30 overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-sm sm:text-base">Preciso de muito dinheiro para começar?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-brand-gold flex-shrink-0 faq-icon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-0">
+                        <p class="text-white/60 text-sm sm:text-base leading-relaxed pb-5">
+                            Não. Muitos membros começam pequeno e reinvestem os lucros. Você pode começar com o que tem e ir crescendo conforme seus resultados.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="reveal card-hover rounded-2xl bg-brand-blue/30 overflow-hidden">
+                    <button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-sm sm:text-base">O acesso é imediato?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-brand-gold flex-shrink-0 faq-icon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-0">
+                        <p class="text-white/60 text-sm sm:text-base leading-relaxed pb-5">
+                            Sim. Após entrar no grupo você terá acesso imediato às oportunidades compartilhadas. Sem espera, sem burocracia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CLOSING SECTION -->
+    <section class="py-16 sm:py-20 md:py-28 relative overflow-hidden" id="fechamento">
+        <!-- Background gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-navy via-brand-dark to-brand-navy"></div>
+        <div class="absolute inset-0 grid-pattern opacity-30"></div>
+        <!-- Decorative glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl"></div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10 text-center">
+            <!-- Badge -->
+            <div class="reveal inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full px-5 py-2 mb-8">
+                <i data-lucide="sparkles" class="w-4 h-4 text-brand-gold"></i>
+                <span class="text-brand-gold text-xs sm:text-sm font-semibold tracking-wider uppercase">Sua Oportunidade</span>
+            </div>
+
+            <!-- Headline -->
+            <h2 class="reveal text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-8">
+                CHEGOU A <span class="text-gold-shimmer">SUA VEZ</span>
+            </h2>
+
+            <!-- Text -->
+            <div class="reveal max-w-2xl mx-auto mb-10 space-y-3">
+                <p class="text-white/70 text-base sm:text-lg">Se você deseja parar de pagar caro...</p>
+                <p class="text-white/80 text-base sm:text-lg font-medium">Ter acesso a ofertas exclusivas...</p>
+                <p class="text-white/80 text-base sm:text-lg font-medium">Comprar melhor...</p>
+                <p class="text-white/90 text-base sm:text-lg font-semibold">E descobrir oportunidades de revenda que podem aumentar sua renda...</p>
+                <p class="text-brand-gold text-lg sm:text-xl font-bold mt-6">Clique no botão abaixo e entre agora para a Souzza Smart.</p>
+            </div>
+
+            <!-- Giant CTA Button -->
+            <div class="reveal mb-8">
+                <a href="https://chat.whatsapp.com/BVbWlCI090GKCHaS9hzhJu?s=cl&p=i&ilr=2" target="_blank" rel="noopener noreferrer" 
+                   class="btn-glow inline-flex items-center gap-3 text-lg sm:text-xl md:text-2xl px-10 sm:px-14 md:px-20 py-5 sm:py-6 md:py-7 rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 sm:w-8 sm:h-8"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    QUERO ENTRAR AGORA
+                </a>
+            </div>
+
+            <!-- Trust seals under CTA -->
+            <div class="reveal flex flex-wrap justify-center gap-4 sm:gap-6 mb-6">
+                <div class="flex items-center gap-2 text-white/50 text-xs sm:text-sm">
+                    <i data-lucide="lock" class="w-4 h-4 text-brand-gold/70"></i>
+                    <span>Acesso Seguro</span>
+                </div>
+                <div class="flex items-center gap-2 text-white/50 text-xs sm:text-sm">
+                    <i data-lucide="zap" class="w-4 h-4 text-brand-gold/70"></i>
+                    <span>Acesso Imediato</span>
+                </div>
+                <div class="flex items-center gap-2 text-white/50 text-xs sm:text-sm">
+                    <i data-lucide="credit-card" class="w-4 h-4 text-brand-gold/70"></i>
+                    <span>100% Gratuito</span>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <p class="reveal text-white/20 text-[10px] sm:text-xs leading-relaxed max-w-xl mx-auto">
+                Os valores mencionados representam potencial variável de faturamento e não constituem garantia de ganhos. Resultados dependem de esforço individual, experiência prévia, investimento e condições de mercado. Não prometemos renda garantida.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark border-t border-white/5 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div class="text-center">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <div class="w-8 h-8 rounded-lg bg-brand-gold/20 flex items-center justify-center">
+                        <i data-lucide="zap" class="w-4 h-4 text-brand-gold"></i>
+                    </div>
+                    <span class="text-lg font-bold text-brand-gold">Souzza Smart</span>
+                </div>
+                <p class="text-white/30 text-xs sm:text-sm mb-2">Souzza Smart © Todos os Direitos Reservados</p>
+                <p class="text-white/15 text-[10px] max-w-lg mx-auto leading-relaxed">
+                    Este site não é afiliado ao WhatsApp, Facebook, Instagram ou qualquer entidade do Meta Group. Produtos e nomes mencionados são propriedade de seus respectivos donos. As informações apresentam potenciais variáveis conforme esforço e condições de mercado — não constituem promessa de resultado garantido.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://chat.whatsapp.com/BVbWlCI090GKCHaS9hzhJu?s=cl&p=i&ilr=2" target="_blank" rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 pulse-ring w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-transform duration-300"
+       aria-label="Entrar no grupo do WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- MAIN JAVASCRIPT -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // ==========================================
+        // Scroll Reveal Animation
+        // ==========================================
+        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Add stagger delay based on element position in parent
+                    const siblings = entry.target.parentElement.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+                    let staggerIndex = 0;
+                    siblings.forEach((sib, i) => {
+                        if (sib === entry.target) staggerIndex = i;
+                    });
+                    
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, staggerIndex * 100);
+                    
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // ==========================================
+        // FAQ Accordion
+        // ==========================================
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('.faq-icon');
+            const isOpen = answer.classList.contains('open');
+            
+            // Close all
+            document.querySelectorAll('.faq-answer').forEach(a => {
+                a.classList.remove('open');
+                a.style.paddingBottom = '0';
+            });
+            document.querySelectorAll('.faq-icon').forEach(i => {
+                i.style.transform = 'rotate(0deg)';
+            });
+            
+            // Open clicked if it was closed
+            if (!isOpen) {
+                answer.classList.add('open');
+                icon.style.transform = 'rotate(45deg)';
+            }
+        }
+
+        // ==========================================
+        // Member Counter Animation
+        // ==========================================
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const startTime = performance.now();
+            
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Easing function
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(easeOut * target);
+                
+                element.textContent = current.toLocaleString('pt-BR') + '+';
+                
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            
+            requestAnimationFrame(update);
+        }
+
+        // Start counter when hero is visible
+        const counterElement = document.getElementById('memberCount');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(counterElement, 10000, 2500);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        counterObserver.observe(counterElement);
+
+        // ==========================================
+        // Urgency Bar - Hide after 10 seconds, show again on scroll
+        // ==========================================
+        const urgencyBar = document.querySelector('.urgency-bar');
+        let urgencyHidden = false;
+        
+        setTimeout(() => {
+            urgencyBar.style.transform = 'translateY(-100%)';
+            urgencyBar.style.transition = 'transform 0.5s ease';
+            urgencyHidden = true;
+        }, 15000);
+
+        // Show urgency bar when user scrolls back to top
+        let lastScrollY = 0;
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            if (scrollY < 100 && urgencyHidden && scrollY < lastScrollY) {
+                urgencyBar.style.transform = 'translateY(0)';
+                urgencyHidden = false;
+                setTimeout(() => {
+                    urgencyBar.style.transform = 'translateY(-100%)';
+                    urgencyHidden = true;
+                }, 5000);
+            }
+            lastScrollY = scrollY;
+        }, { passive: true });
+
+        // ==========================================
+        // Smooth scroll for internal links
+        // ==========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ==========================================
+        // Parallax effect on hero decorations
+        // ==========================================
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const heroDecorations = document.querySelectorAll('.hero-bg .absolute.blur-3xl');
+            heroDecorations.forEach((el, i) => {
+                const speed = i === 0 ? 0.3 : 0.2;
+                el.style.transform = `translateY(${scrollY * speed}px)`;
+            });
+        }, { passive: true });
+    </script>
+<script src="https://deepsite.hf.co/deepsite-badge.js"></script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2493132487808126');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2493132487808126&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</body>
+</html>
