@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KH39HG6D');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecionando — Souzza Smart</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 24px; background: #050505; color: #fff;
+    font-family: Arial, Helvetica, sans-serif; text-align: center;
+  }
+  main { width: 100%; max-width: 520px; }
+  .lock {
+    width: 64px; height: 64px; margin: 0 auto 24px; border-radius: 50%;
+    border: 1px solid rgba(37,211,102,.5); background: rgba(37,211,102,.08);
+    display: flex; align-items: center; justify-content: center; font-size: 29px;
+  }
+  h1 { margin: 0 0 16px; font-size: clamp(22px, 5vw, 28px); line-height: 1.25; }
+  p { margin: 0; color: #bdbdbd; font-size: 16px; line-height: 1.5; }
+  .spinner {
+    width: 28px; height: 28px; margin: 30px auto 0; border-radius: 50%;
+    border: 3px solid #292929; border-top-color: #25d366;
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  a { color: #25d366; }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH39HG6D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<main>
+  <div class="lock" aria-hidden="true">🔒</div>
+  <h1>Pedido de entrada no grupo aceito</h1>
+  <p>Seu acesso está sendo liberado. Aguarde...</p>
+  <div class="spinner" aria-hidden="true"></div>
+  <p id="fallback" hidden style="margin-top:24px">Se você não for redirecionado, <a id="fallbackLink" href="https://www.cupomradaroficial.com/g/souzzasmart">toque aqui para continuar</a>.</p>
+  <!-- Mantém o texto e o destino do CTA original para compatibilidade com gatilhos de clique configurados no GTM. -->
+  <a id="group-entry-link" href="https://www.cupomradaroficial.com/g/souzzasmart" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">
+    <button id="group-entry-button" type="button">ENTRAR GRATUITAMENTE NO GRUPO</button>
+  </a>
+</main>
+
+<script>
+(function () {
+  var destination = 'https://www.cupomradaroficial.com/g/souzzasmart';
+  var delayMs = 1500;
+  var redirected = false;
+
+  function redirectToGroup() {
+    if (redirected) return;
+    redirected = true;
+
+    // Dispara um clique real no CTA preservado para permitir que gatilhos de clique
+    // do GTM já configurados sejam executados antes da navegação.
+    var button = document.getElementById('group-entry-button');
+    if (button) button.click();
+
+    // Fallback explícito para garantir a navegação mesmo se o clique for interceptado.
+    window.setTimeout(function () {
+      window.location.replace(destination);
+    }, 50);
+  }
+
+  // Exibe um link manual caso o navegador impeça o redirecionamento automático.
+  window.setTimeout(function () {
+    var fallback = document.getElementById('fallback');
+    if (fallback) fallback.hidden = false;
+  }, 5000);
+
+  window.setTimeout(redirectToGroup, delayMs);
+})();
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2493132487808126');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2493132487808126&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</body>
+</html>
